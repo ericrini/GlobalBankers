@@ -1,0 +1,24 @@
+{
+  "name": "globalbankers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./test/**/*Test.js --reporter spec",
+    "start": "node ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.9.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "request-promise-cache": "^2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "nock": "^10.0.6"
+  }
+}

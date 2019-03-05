@@ -1,0 +1,46 @@
+{
+  "$id": "https://globalbankers.com/get-value.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GetValue",
+  "type": "object",
+  "properties": {
+    "make": {
+      "type": "string",
+      "description": "The make of the vehicle."
+    },
+    "model": {
+      "type": "string",
+      "description": "The model of the vehicle."
+    },
+    "ageInMonths": {
+      "description": "The age of the vehicle in months.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "previousOwners": {
+      "description": "The number of previous owners.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "mileage": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "numberOfCollisions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "value": {
+      "description": "The purchase price of the vehicle.",
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "make",
+    "model",
+    "ageInMonths",
+    "previousOwners",
+    "value"
+  ]
+}
